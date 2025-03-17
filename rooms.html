@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@4.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/src/styles.css" rel="stylesheet">
+  <title>Rooms | Misibis Bay</title>
+</head>
+
+<body>
+    <nav class="navbar p-4 py-3 bg-blue-100 text-white w-full fixed top-0 left-0 z-50 shadow-md">
+    <div class="flex items-center justify-between">
+      <div class="text-black text-xl font-bold" style="font-family:Dancing Script;">
+        <a href="#">Misibis Bay</a>
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html#home" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="home-link">Home</a>
+        <a href="index.html#about" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="about-link">About</a>
+        <a href="index.html#services" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="services-link">Services</a>
+        <a href="rooms.html" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="room-link">Rooms</a>
+        <a href="activities.html" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="activity-link">Activities</a>
+        <a href="contact.html" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="contact-link">Contact Us</a>
+        <a href="book.html" class="nav-link bg-blue-500 text-white hover:bg-blue-600 transition-all py-1 px-3 rounded-full font-semibold text-xs shadow-md hover:scale-105 transform duration-300" style="font-family:Poppins;" id="book-link">
+          Book Now
+        </a>
+      </div>
+            <div class="md:hidden flex items-center p-4">
+                <button id="menu-toggle" class="text-black focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="menu-transition fixed top-0 right-0 w-72 h-full bg-gray-800 text-white text-lg transform translate-x-full z-10 p-10 space-y-6 flex flex-col justify-start" style="transition: transform 0.3s ease;">
+                <button id="close-menu" class="text-white text-lg absolute top-3 left-4">×</button>
+                <a href="index.html#home" class="hover:text-gray-300 mb-6" style="font-family: Poppins;">Home</a>
+                <a href="index.html#about" class="hover:text-gray-300 mb-6" style="font-family: Poppins;">About</a>
+                <a href="index.html#services" class="hover:text-gray-300 mb-6" style="font-family: Poppins;">Services</a>
+                <a href="activities.html" class="hover:text-gray-300" style="font-family: Poppins;">Activities</a>
+                <a href="contact.html" class="hover:text-gray-300" style="font-family: Poppins;">Contact Us</a>
+                <div>
+                    <a href="book.html" class="nav-link flex justify-center ms-2 mt-4 bg-blue-500 text-white hover:bg-blue-600 transition-all py-1 px-14 rounded-full font-semibold text-s shadow-md hover:scale-105 transform duration-300">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <section id="section" class="py-0 text-center mt-1 opacity-0 transition-opacity duration-2000 ease-in-out">
+    <div class="overflow-hidden relative w-full">
+      <div id="imageFlow" class="flex">
+        <img src="pl.webp" alt="Misibis Bay 1" class="object-cover w-[400px] h-[300px]">
+        <img src="a.jpg" alt="Misibis Bay 2" class="object-cover w-[400px] h-[300px]">
+        <img src="g.jpg" alt="Misibis Bay 3" class="object-cover w-[400px] h-[300px]">
+        <img src="stand.jpg" alt="Misibis Bay 4" class="object-cover w-[400px] h-[300px]">
+        <img src="pl.webp" alt="Misibis Bay 1" class="object-cover w-[400px] h-[300px]">
+        <img src="a.jpg" alt="Misibis Bay 2" class="object-cover w-[400px] h-[300px]">
+        <img src="g.jpg" alt="Misibis Bay 3" class="object-cover w-[400px] h-[300px]">
+        <img src="stand.jpg" alt="Misibis Bay 4" class="object-cover w-[400px] h-[300px]">
+        
+        <img src="pl.webp" alt="Misibis Bay 1" class="object-cover w-[400px] h-[300px]">
+        <img src="a.jpg" alt="Misibis Bay 2" class="object-cover w-[400px] h-[300px]">
+        <img src="g.jpg" alt="Misibis Bay 3" class="object-cover w-[400px] h-[300px]">
+        <img src="stand.jpg" alt="Misibis Bay 4" class="object-cover w-[400px] h-[300px]">
+        <img src="pl.webp" alt="Misibis Bay 1" class="object-cover w-[400px] h-[300px]">
+        <img src="a.jpg" alt="Misibis Bay 2" class="object-cover w-[400px] h-[300px]">
+        <img src="g.jpg" alt="Misibis Bay 3" class="object-cover w-[400px] h-[300px]">
+        <img src="stand.jpg" alt="Misibis Bay 4" class="object-cover w-[400px] h-[300px]">
+      </div>
+    </div>
+  </section>
+
+  <section id="room" class="py-16 bg-gray-100 text-center mt-1 opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-semibold text-black" style="font-family:Poppins;">Rooms</h2>
+      <p class="mt-4 text-base" style="font-family:Poppins;">Experience luxury with our exquisite rooms, each offering stunning views, modern amenities, and exceptional service.</p>
+  
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="p-4 border-2 shadow-lg border-blue-200 transition-all transform hover:scale-105 hover:border-blue-400 max-w-xs mx-auto">
+          <img src="del.jpg" alt="Ocean View Room" class="w-full h-46 object-cover">
+          <h3 class="text-lg font-semibold mt-3" style="font-family:Poppins;">Ocean View Room</h3>
+          <h1 class="font-light" style="font-family:Poppins;">Deluxe</h1>
+          <p class="mt-2 text-sm" style="font-family:Poppins;">Enjoy breathtaking ocean views with large windows, a king-size bed, and modern amenities to ensure comfort and relaxation.</p>
+          <ul class="mt-2 text-sm text-left px-4" style="font-family:Poppins;">
+            <li>Capacity: 2 Adults + 1 Child</li>
+            <li>Bed: King-size</li>
+            <li>Amenities: Free Wi-Fi, Flat-screen TV, Minibar</li>
+            <li>View: Ocean</li>
+          </ul>
+          <p class="mt-4 text-xl font-light text-blue-600" style="font-family:Poppins;">Price: ₱47,500</p>
+          <a href="book.html?roomType=deluxe&view=ocean-view" class="inline-block mt-4 py-1 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors" style="font-family:Poppins;">Book Now</a>
+        </div>
+  
+        <div class="p-4 border-2 shadow-lg border-blue-200 transition-all transform hover:scale-105 hover:border-blue-400 max-w-xs mx-auto">
+          <img src="g.jpg" alt="Garden View Room" class="w-full h-46 object-cover">
+          <h3 class="text-lg font-semibold mt-3" style="font-family:Poppins;">Garden View Room</h3>
+          <h1 class="font-light" style="font-family:Poppins;">Deluxe</h1>
+          <p class="mt-2 text-sm" style="font-family:Poppins;">Relax in a peaceful garden setting, featuring a queen-size bed, cozy decor, and views of lush greenery.</p>
+          <ul class="mt-2 text-sm text-left px-4" style="font-family:Poppins;">
+            <li>Capacity: 2 Adults</li>
+            <li>Bed: Queen-size</li>
+            <li>Amenities: Free Wi-Fi, Flat-screen TV, Balcony</li>
+            <li>View: Garden</li>
+          </ul>
+          <p class="mt-4 text-xl font-light text-blue-600" style="font-family:Poppins;">Price: ₱19,000</p>
+          <a href="book.html?roomType=deluxe&view=garden-view" class="inline-block mt-4 py-1 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors" style="font-family:Poppins;">Book Now</a>
+        </div>
+  
+        <div class="p-4 border-2 shadow-lg border-blue-200 transition-all transform hover:scale-105 hover:border-blue-400 max-w-xs mx-auto">
+          <img src="dlp.jpg" alt="Poolside Room" class="w-full h-46 object-cover">
+          <h3 class="text-lg font-semibold mt-3" style="font-family:Poppins;">Poolside Room</h3>
+          <h1 class="font-light" style="font-family:Poppins;">Deluxe</h1>
+          <p class="mt-2 text-sm" style="font-family:Poppins;">Step out to the sparkling pool directly from your room, ideal for those who love outdoor relaxation and easy access to the water.</p>
+          <ul class="mt-2 text-sm text-left px-4" style="font-family:Poppins;">
+            <li>Capacity: 2 Adults</li>
+            <li>Bed: Queen-size</li>
+            <li>Amenities: Pool Access, Free Wi-Fi, Air Conditioning</li>
+            <li>View: Poolside</li>
+          </ul>
+          <p class="mt-4 text-xl font-light text-blue-600" style="font-family:Poppins;">Price: ₱24,000</p>
+          <a href="book.html?roomType=deluxe&view=pool-view" class="inline-block mt-4 py-1 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors" style="font-family:Poppins;">Book Now</a>
+        </div>
+  
+        <div class="p-4 border-2 shadow-lg border-blue-200 transition-all transform hover:scale-105 hover:border-blue-400 max-w-xs mx-auto">
+          <img src="ps.jpg" alt="Ocean View Room" class="w-full h-46 object-cover">
+          <h3 class="text-lg font-semibold mt-3" style="font-family:Poppins;">Ocean View Room</h3>
+          <h1 class="font-light" style="font-family:Poppins;">Premier</h1>
+          <p class="mt-2 text-sm" style="font-family:Poppins;">Enjoy stunning ocean views with a private balcony, king-size bed, and a spacious room designed for ultimate relaxation.</p>
+          <ul class="mt-2 text-sm text-left px-4" style="font-family:Poppins;">
+            <li>Capacity: 2 Adults + 2 Children</li>
+            <li>Bed: King-size</li>
+            <li>Amenities: Private Balcony, Free Wi-Fi, Flat-screen TV</li>
+            <li>View: Ocean</li>
+          </ul>
+          <p class="mt-4 text-xl font-light text-blue-600" style="font-family:Poppins;">Price: ₱12,000</p>
+          <a href="book.html?roomType=suite&view=ocean-view" class="inline-block mt-4 py-1 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors" style="font-family:Poppins;">Book Now</a>
+        </div>
+  
+        <div class="p-4 border-2 shadow-lg border-blue-200 transition-all transform hover:scale-105 hover:border-blue-400 max-w-xs mx-auto">
+          <img src="pg.jpg" alt="Garden View Room" class="w-full h-46 object-cover">
+          <h3 class="text-lg font-semibold mt-3" style="font-family:Poppins;">Garden View Room</h3>
+          <h1 class="font-light" style="font-family:Poppins;">Premier</h1>
+          <p class="mt-2 text-sm" style="font-family:Poppins;">A charming room with garden views, perfect for a serene getaway, with modern amenities and a relaxing atmosphere.</p>
+          <ul class="mt-2 text-sm text-left px-4" style="font-family:Poppins;">
+            <li>Capacity: 2 Adults</li>
+            <li>Bed: Queen-size</li>
+            <li>Amenities: Free Wi-Fi, Air Conditioning, Mini-fridge</li>
+            <li>View: Garden</li>
+          </ul>
+          <p class="mt-4 text-xl font-light text-blue-600" style="font-family:Poppins;">Price: ₱15,000</p>
+          <a href="book.html?roomType=suite&view=garden-view" class="inline-block mt-4 py-1 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors" style="font-family:Poppins;">Book Now</a>
+        </div>
+  
+        <div class="p-4 border-2 shadow-lg border-blue-200 transition-all transform hover:scale-105 hover:border-blue-400 max-w-xs mx-auto">
+          <img src="ppl.jpg" alt="Poolside Room" class="w-full h-46 object-cover">
+          <h3 class="text-lg font-semibold mt-3" style="font-family:Poppins;">Poolside Room</h3>
+          <h1 class="font-light" style="font-family:Poppins;">Premier</h1>
+          <p class="mt-2 text-sm" style="font-family:Poppins;">Perfect for those who love being close to the pool, with quick access to water activities and a comfortable, cozy atmosphere.</p>
+          <ul class="mt-2 text-sm text-left px-4" style="font-family:Poppins;">
+            <li>Capacity: 2 Adults</li>
+            <li>Bed: King-size</li>
+            <li>Amenities: Pool Access, Free Wi-Fi, Mini Bar</li>
+            <li>View: Poolside</li>
+          </ul>
+          <p class="mt-4 text-xl font-light text-blue-600" style="font-family:Poppins;">Price: ₱16,000</p>
+          <a href="book.html?roomType=suite&view=pool-view" class="inline-block mt-4 py-1 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors" style="font-family:Poppins;">Book Now</a>
+        </div>
+  
+        <div class="p-4 border-2 shadow-lg border-blue-200 transition-all transform hover:scale-105 hover:border-blue-400 max-w-xs mx-auto">
+          <img src="lv.jpg" alt="Ocean View Room" class="w-full h-52 object-cover">
+          <h3 class="text-lg font-semibold mt-3" style="font-family:Poppins;">Ocean View Room</h3>
+          <h1 class="font-light" style="font-family:Poppins;">Luxe Villa</h1>
+          <p class="mt-2 text-sm" style="font-family:Poppins;">Enjoy panoramic ocean views, a luxurious room with modern amenities, and a private terrace for the ultimate getaway.</p>
+          <ul class="mt-2 text-sm text-left px-4" style="font-family:Poppins;">
+            <li>Capacity: 2 Adults + 2 Children</li>
+            <li>Bed: King-size</li>
+            <li>Amenities: Private Terrace, Free Wi-Fi, Mini-bar</li>
+            <li>View: Ocean</li>
+          </ul>
+          <p class="mt-4 text-xl font-light text-blue-600" style="font-family:Poppins;">Price: ₱50,000</p>
+          <a href="book.html?roomType=villa&view=mountain-view" class="inline-block mt-4 py-1 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors" style="font-family:Poppins;">Book Now</a>
+        </div>
+  
+        <div class="p-4 border-2 shadow-lg border-blue-200 transition-all transform hover:scale-105 hover:border-blue-400 max-w-xs mx-auto">
+          <img src="sg.jpg" alt="Garden View Room" class="w-full h-46 object-cover">
+          <h3 class="text-lg font-semibold mt-3" style="font-family:Poppins;">Garden View Room</h3>
+          <h1 class="font-light" style="font-family:Poppins;">Standard</h1>
+          <p class="mt-2 text-sm" style="font-family:Poppins;">Enjoy tranquility in our garden view rooms, with all the comfort and elegance you need for a relaxing stay.</p>
+          <ul class="mt-2 text-sm text-left px-4" style="font-family:Poppins;">
+            <li>Capacity: 2 Adults</li>
+            <li>Bed: Queen-size</li>
+            <li>Amenities: Free Wi-Fi, Flat-screen TV, Air Conditioning</li>
+            <li>View: Garden</li>
+          </ul>
+          <p class="mt-4 text-xl font-light text-blue-600" style="font-family:Poppins;">Price: ₱9,000</p>
+          <a href="book.html?roomType=standard&view=garden-view" class="inline-block mt-4 py-1 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors" style="font-family:Poppins;">Book Now</a>
+        </div>
+  
+        <div class="p-4 border-2 shadow-lg border-blue-200 transition-all transform hover:scale-105 hover:border-blue-400 max-w-xs mx-auto">
+          <img src="pl.webp" alt="Poolside Room" class="w-full h-52 object-cover">
+          <h3 class="text-lg font-semibold mt-3" style="font-family:Poppins;">Poolside Room</h3>
+          <p class="mt-2 text-sm" style="font-family:Poppins;">A perfect choice for those who enjoy the outdoors, with easy access to the pool and a peaceful, relaxing room.</p>
+          <ul class="mt-2 text-sm text-left px-4" style="font-family:Poppins;">
+            <li>Capacity: 2 Adults + 1 Child</li>
+            <li>Bed: Queen-size</li>
+            <li>Amenities: Pool Access, Free Wi-Fi, Air Conditioning</li>
+            <li>View: Poolside</li>
+          </ul>
+          <p class="mt-4 text-xl font-light text-blue-600" style="font-family:Poppins;">Price: ₱17,000</p>
+          <a href="book.html?roomType=standard&view=pool-view" class="inline-block mt-10 py-1 px-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors" style="font-family:Poppins;">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="bg-gray-500 text-white py-7">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-bold mb-4" style="font-family:Poppins;">Get Connected!</h3>
+        <p class="text-lg" style="font-family:Poppins;">We're here to help you! Reach out to us for inquiries or support.</p>
+        <div class="mt-4" style="font-family:Poppins;">
+          <p class="text-md">📧 Email: <a href="mailto:info@misibisbay.com" class="underline">info@misibisbay.com</a></p>
+          <p class="text-md">📞 Phone: +1 800-123-4567</p>
+        </div>
+        <a href="mailto:info@misibisbay.com" class="mt-6 inline-block bg-blue-500 text-white px-5 py-1 rounded-lg shadow-lg hover:bg-blue-700 transition-all">Email Us</a>
+      </div>
+  
+      <div class="mt-6 md:mt-0 text-center">
+        <p class="text-lg mb-2">Follow Us:</p>
+        <div class="flex justify-center gap-4">
+          <a href="#" class="text-white hover:text-gray-500">
+            <i class="fab fa-facebook-f">Facebook: Misibis Bay</i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-500">
+            <i class="fab fa-tiktok">Tiktok: Misibis Bay</i>
+          </a>
+          <a href="#" class="text-white hover:text-gray-500">
+            <i class="fab fa-instagram">Instagram: Misibis Bay</i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer>
+    <div class="text-center mt-0 py-4 bg-gray-800 text-white">
+      <p class="text-xs">&copy; 2025 Misibis Bay. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const imageFlow = document.getElementById('imageFlow');
+      const images = imageFlow.querySelectorAll('img');
+      const totalImages = images.length;
+
+      let imageWidth = images[0].width; 
+      let totalWidth = imageWidth * totalImages; 
+      let startPosition = 0;
+  
+      function moveImages() {
+        startPosition -= 0.3; 
+        if (Math.abs(startPosition) >= imageWidth * images.length / 2) {
+          startPosition = 0;
+        }
+        imageFlow.style.transform = `translateX(${startPosition}px)`;
+        requestAnimationFrame(moveImages);
+      }
+      moveImages();
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const section = document.getElementById("section");
+      section.classList.remove('opacity-0');
+      section.classList.add('opacity-100');
+
+      const section2 = document.getElementById("room");
+    section2.classList.remove('opacity-0');
+    section2.classList.add('opacity-100');
+    });
+  </script>
+
+  <script>
+    document.getElementById('room-link').classList.add('text-blue-600', 'border-b-2', 'border-blue-600', 'tracking-wider', 'transition-all', 'scale-105');
+  </script>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('translate-x-full');  
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+    });
+  </script>
+</body>
+</html>

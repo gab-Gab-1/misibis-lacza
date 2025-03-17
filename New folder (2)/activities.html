@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@4.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/src/styles.css" rel="stylesheet">
+  <title>Activities | Misibis Bay</title>
+</head>
+
+<body class="bg-gray-50">
+    <nav class="p-4 py-3 bg-blue-100 text-white w-full fixed top-0 left-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-black text-xl font-bold" style="font-family:Dancing Script;">
+                <a href="#">Misibis Bay</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html#home" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="home-link">Home</a>
+                <a href="index.html#about" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="about-link">About</a>
+                <a href="index.html#services" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="services-link">Services</a>
+                <a href="rooms.html" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="room-link">Rooms</a>
+                <a href="activities.html" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="activity-link">Activities</a>
+                <a href="contact.html" class="nav-link text-black hover:text-blue-600 transition-all" style="font-family:Poppins;" id="contact-link">Contact Us</a>
+                <a href="book.html" class="nav-link bg-blue-500 text-white hover:bg-blue-600 transition-all py-1 px-3 rounded-full font-semibold text-xs shadow-md hover:scale-105 transform duration-300" style="font-family:Poppins;" id="book-link">
+                Book Now
+                </a>
+            </div>
+            <div class="md:hidden flex items-center p-4">
+                <button id="menu-toggle" class="text-black focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="menu-transition fixed top-0 right-0 w-72 h-full bg-gray-800 text-white text-lg transform translate-x-full z-10 p-10 space-y-6 flex flex-col justify-start" style="transition: transform 0.3s ease;">
+                <button id="close-menu" class="text-white text-lg absolute top-3 left-4">×</button>
+                <a href="index.html#home" class="hover:text-gray-300 mb-6" style="font-family: Poppins;">Home</a>
+                <a href="index.html#about" class="hover:text-gray-300 mb-6" style="font-family: Poppins;">About</a>
+                <a href="index.html#services" class="hover:text-gray-300 mb-6" style="font-family: Poppins;">Services</a>
+                <a href="rooms.html" class="hover:text-gray-300" style="font-family: Poppins;">Rooms</a>
+                <a href="contact.html" class="hover:text-gray-300" style="font-family: Poppins;">Contact Us</a>
+                <div>
+                    <a href="book.html" class="nav-link flex justify-center ms-2 mt-5 bg-blue-500 text-white hover:bg-blue-600 transition-all py-1 px-14 rounded-full font-semibold text-s shadow-md hover:scale-105 transform duration-300">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <section id="act" class="py-24 bg-gray-100 opacity-0 transition-opacity duration-1000 ease-in-out">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-black mb-12" style="font-family:Poppins;">Exciting Activities at Misibis Bay</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        
+        <div class="p-4 border-2 border-blue-200 shadow-lg overflow-hidden">
+          <img src="jt.jpg" alt="Jet Ski" class="w-full h-52 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-black">Jet Ski</h3>
+            <p class="text-gray-700 mt-2">Experience the thrill of riding the waves with our exciting Jet Ski rental. Perfect for adventure seekers!</p>
+            <p class="text-xl font-semibold text-black mt-8">₱5,000 per hour</p>
+          </div>
+        </div>
+
+        <div class="p-4 border-2 border-blue-200 shadow-lg overflow-hidden">
+          <img src="k.jpg" alt="Kayaking" class="w-full h-52 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-black">Kayaking</h3>
+            <p class="text-gray-700 mt-2">Enjoy a serene experience on the water while paddling through the calm and crystal-clear lagoons.</p>
+            <p class="text-xl font-semibold text-black mt-7">₱500 per hour</p>
+          </div>
+        </div>
+
+        <div class="p-4 border-2 border-blue-200 shadow-lg overflow-hidden">
+          <img src="bb.jpg" alt="Banana Boat" class="w-full h-52 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-black">Banana Boat</h3>
+            <p class="text-gray-700 mt-2">Grab your friends and hold on tight! Our Banana Boat ride will give you the ride of your life.</p>
+            <p class="text-xl font-semibold text-black mt-8">₱2,500 per ride (up to 4 people)</p>
+          </div>
+        </div>
+
+        <div class="p-4 border-2 border-blue-200 shadow-lg overflow-hidden">
+          <img src="at.webp" alt="ATV" class="w-full h-52 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-black">ATV Adventure</h3>
+            <p class="text-gray-700 mt-2">Explore the island’s rugged terrain with our ATV rentals. Perfect for adventure enthusiasts looking to conquer the outdoors.</p>
+            <p class="text-xl font-semibold text-black mt-4">₱600 per hour</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-500 text-white py-7">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="text-center md:text-left">
+        <h3 class="text-2xl font-bold mb-4" style="font-family:Poppins;">Get Connected</h3>
+        <p class="text-lg" style="font-family:Poppins;">We're here to help you! Reach out to us for inquiries or support.</p>
+        <div class="mt-4" style="font-family:Poppins;">
+          <p class="text-md">📧 Email: <a href="mailto:info@misibisbay.com" class="underline">info@misibisbay.com</a></p>
+          <p class="text-md">📞 Phone: +1 800-123-4567</p>
+        </div>
+        <a href="mailto:info@misibisbay.com" class="mt-6 inline-block bg-blue-500 text-white px-5 py-1 rounded-lg shadow-lg hover:bg-blue-700 transition-all">Email Us</a>
+      </div>
+
+      <div class="mt-6 md:mt-0 text-center">
+        <p class="text-lg mb-2">Follow Us:</p>
+        <div class="flex justify-center gap-4">
+          <a href="#" class="text-white hover:text-gray-500">Facebook</a>
+          <a href="#" class="text-white hover:text-gray-500">Tiktok</a>
+          <a href="#" class="text-white hover:text-gray-500">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer>
+    <div class="text-center mt-0 py-4 bg-gray-800 text-white">
+      <p class="text-xs">&copy; 2025 Misibis Bay. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  
+
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth',
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const section = document.getElementById("act");
+      section.classList.remove('opacity-0');
+      section.classList.add('opacity-100');
+    });
+  </script>
+
+  <script>
+    document.getElementById('activity-link').classList.add('text-blue-600', 'border-b-2', 'border-blue-600', 'tracking-wider', 'transition-all', 'scale-105');
+  </script>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('translate-x-full');  
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+    });
+  </script>
+</body>
+</html>

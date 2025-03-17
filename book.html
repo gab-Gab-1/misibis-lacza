@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@4.0.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/src/styles.css" rel="stylesheet">
+  <title>Book | Misibis Bay</title>
+</head>
+
+<body>
+    <nav class="p-4 py-3 bg-blue-100 text-white w-full fixed top-0 left-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-black text-xl font-bold" style="font-family:Dancing Script;">
+                <a href="index.html#home">Misibis Bay</a>
+            </div>
+            
+            <div class="flex items-center justify-end">
+                <a href="index.html#home" class="nav-link bg-blue-500 text-white hover:bg-blue-600 transition-all py-1 px-3 rounded-full font-semibold text-xs shadow-md hover:scale-105 transform duration-300" style="font-family:Poppins;">Explore</a>   
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-16 px-4 shadow-lg bg-blue-100 text-black" style="font-family: Poppins;">
+        <div class="max-w-2xl mx-auto text-left">
+            <h2 class="text-3xl font-bold mb-4">Reserve Your Stay at Misibis Bay</h2>
+            <p class="text-lg mb-8">Plan your perfect getaway and book your stay with us today!</p>
+            <div class="bg-white p-6 shadow-lg">
+                <form id="reservationForm">
+                    <div class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium">Full Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="mt-2 p-2 w-full text-black rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium">Email Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="mt-2 p-2 w-full text-black rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <div>
+                            <label for="checkIn" class="block text-gray-700 font-medium">Check-In Date</label>
+                            <input type="date" id="checkIn" name="checkIn" required
+                                class="mt-2 p-2 w-full text-black rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <div>
+                            <label for="checkOut" class="block text-gray-700 font-medium">Check-Out Date</label>
+                            <input type="date" id="checkOut" name="checkOut" required
+                                class="mt-2 p-2 w-full text-black rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <form method="GET" action="/submit-booking" class="bg-white p-6 rounded-lg shadow-lg max-w-xl mx-auto">
+                            <div class="mb-6">
+                              <label for="room-selection" class="block text-lg font-medium text-gray-700 mb-2">Select Room Type</label>
+                              <select id="room-selection" name="roomType" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-700">
+                                <option value="view">Select</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="standard">Standard Room</option>
+                                <option value="suite">Premier</option>
+                                <option value="villa">Villa</option>
+                              </select>
+                            </div>
+                          
+                            <div class="mb-6">
+                              <label for="view-selection" class="block text-lg font-medium text-gray-700 mb-2">Select</label>
+                              <select id="view-selection" name="view" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-gray-700">
+                                <option value="view">Select</option>
+                                <option value="ocean-view">Ocean View</option>
+                                <option value="garden-view">Garden View</option>
+                                <option value="pool-view">Poolside</option>
+                                <option value="mountain-view">Luxury</option>
+                              </select>
+                            </div>
+                        </form>
+                        <div>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="successMessage" class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 justify-center items-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h3 class="text-2xl font-bold mb-4 text-green-600">Reservation Successful!</h3>
+            <p class="text-lg mb-6">Your reservation has been successfully placed. We look forward to welcoming you!</p>
+            <button onclick="closeSuccessMessage()"
+                class="bg-blue-600 text-white font-bold py-2 px-6 rounded-md hover:bg-blue-700 focus:outline-none">
+                Close
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const roomType = urlParams.get('roomType'); 
+          const view = urlParams.get('view'); 
+
+          if (roomType) {
+            const roomTypeElement = document.getElementById("room-selection");
+            if (roomTypeElement) {
+              roomTypeElement.value = roomType;
+            }
+          }
+          
+          if (view) {
+            const viewElement = document.getElementById("view-selection");
+            if (viewElement) {
+              viewElement.value = view;
+            }
+          }
+        });
+      
+        function closeSuccessMessage() {
+          document.getElementById("successMessage").classList.add("hidden");
+        }
+      </script>
+
+    <script>
+        document.getElementById('reservationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const checkIn = document.getElementById('checkIn').value;
+            const checkOut = document.getElementById('checkOut').value;
+            const roomType = document.getElementById('roomType').value;
+
+            showSuccessMessage();
+        });
+
+        function showSuccessMessage() {
+            document.getElementById('successMessage').classList.remove('hidden');
+        }
+        function closeSuccessMessage() {
+            document.getElementById('successMessage').classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>
